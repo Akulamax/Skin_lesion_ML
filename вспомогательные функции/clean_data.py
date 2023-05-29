@@ -1,33 +1,10 @@
 import cv2
 import numpy as np
 from datetime import datetime
-import matplotlib.pyplot as plt
 import shutil
 import os
 import sys
 
-# global res
-# res = []
-# def clean_data(dir, file_name):
-#     if file_name[-5] != 'k':
-#         return 0
-#     global res
-#     image = cv2.imread(dir + file_name, cv2.IMREAD_GRAYSCALE)
-#     gray = len(image[np.logical_and(50 < image, image < 150)])
-#     black = len(image[image <= 50])
-#     white = len(image[image >= 150])
-#     if black > 0:
-#         if white < 0.05 * gray or white > 1.7 * gray:
-#             res.append(file_name)
-#             # print('gray', gray)
-#             # print('black', black)
-#             # print('white', white)
-#     else:
-#         if white < 0.01 * gray or white > 2 * gray:
-#             res.append(file_name)
-#             # print('gray', gray)
-#             # print('black', black)
-#             # print('white', white)
 
 def clean_data(dir, file_name):
     if file_name[-5] != 'k':
